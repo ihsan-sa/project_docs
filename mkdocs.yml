@@ -1,15 +1,62 @@
 site_name: Ihsan Salari - Project Docs
 
 theme:
-  name: windmill
+  name: material
+  features:
+    # - navigation.instant
+    - navigation.tabs
+    # - navigation.sections
+    - toc.integrate
+    # - navigation.top
+    # - search.suggest
+    # - search.highlight
+    # - content.tabs.link
+    # - content.code.annotation
+    # - content.code.copy
+    # - navigaation.expand
+    - navigation.indexes
+    - navigation.tabs.sticky
+    - navigation.tracking
 
-  # palette:
-  #   - scheme: default
-  #     toggle:
-  #       icon: material/brightness-7
-  #       name: darkMode
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: orange
+      accent: purple
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode 
+      primary: purple
+      accent: lime
 
-  #   - scheme: slate
-  #     toggle:
-  #       icon: material/brightness-4
-  #       name: lightMode
+nav: 
+  - Home: index.md
+  - Projects: 
+    - Projects Home: Projects/index.md
+    - Business Card: 
+      - Projects/BusinessCard/index.md
+      - Hardware design: Projects/BusinessCard/hardwareDesign.md
+      - Firmware design: Projects/BusinessCard/firmware.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://www.github.com/ihsan-sa
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/ihsan-sa
+    - icon: fontawesome/solid/envelope
+      link: mailto:hi@ihsan.cc
+
+copyright: © 2025 Ihsan Salari
+
+markdown_extensions:
+  - toc:
+      permalink: true
+
+google_analytics:
+  - G-TRGT164KDF
+  - auto

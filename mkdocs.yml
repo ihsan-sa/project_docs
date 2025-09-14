@@ -1,0 +1,15 @@
+site_name: Ihsan Salari - Project Docs
+
+theme:
+  name: windmill
+
+  # palette:
+  #   - scheme: default
+  #     toggle:
+  #       icon: material/brightness-7
+  #       name: darkMode
+
+  #   - scheme: slate
+  #     toggle:
+  #       icon: material/brightness-4
+  #       name: lightMode

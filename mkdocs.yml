@@ -1,7 +1,7 @@
 site_name: Ihsan Salari - Project Docs
 
 theme:
-  name: material
+  name: windmill
 
   # palette:
   #   - scheme: default

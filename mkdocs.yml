@@ -67,11 +67,14 @@ extra:
       link: https://www.linkedin.com/in/ihsan-sa
     - icon: fontawesome/solid/envelope
       link: mailto:hi@ihsan.cc
+    - icon: fontawesome/solid/globe
+      link: https://www.ihsan.cc
+      name: ihsan.cc
   
   generator: false
 
 
-copyright: © 2025 Ihsan Salari
+copyright: © 2025 Ihsan Salari &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.ihsan.cc">www.ihsan.cc</a>
 
 markdown_extensions:
   - toc:

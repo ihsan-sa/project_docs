@@ -4,6 +4,8 @@ theme:
   name: material
   font: 
     text: Courier Prime
+  toc:
+    toc_depth: 2
   features:
     - navigation.instant
     - navigation.tabs
@@ -20,37 +22,43 @@ theme:
     - navigation.tabs.sticky
     - navigation.tracking
     - header.autohide
+    - content.code.copy
 
   language: en
   palette:
     - scheme: custom-dark
       toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
+        icon: material/weather-sunny
+        name: Switch to light mode
     - scheme: custom-light
       toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode 
+        icon: material/weather-night
+        name: Switch to dark mode 
 
 
 nav: 
-  - Home: index.md
+  - Home: 
+    - Overview: index.md
   - Projects: 
     - Projects Home: Projects/index.md
     - Business Card:
       - Revision 1: 
-        - Projects/BusinessCard/Rev1/index.md
+        - Overview: Projects/BusinessCard/Rev1/overview.md
         - Hardware design: Projects/BusinessCard/Rev1/hardwareDesign.md
         - Firmware design: Projects/BusinessCard/Rev1/firmware.md
-    - DC to DC: Projects/DC_DC/index.md
+    - DC to DC: 
+      - Overview: Projects/DC_DC/overview.md
     - Ionic (EHD) Thruster:
-      - Projects/IonicThruster/index.md
+      - Overview: Projects/IonicThruster/overview.md
     - LED Flood Light Panels:
-      - Projects/LEDLightPanels/index.md
+      - Overview: Projects/LEDLightPanels/overview.md
       - 20V Panel:
-        - Projects/LEDLightPanels/20V_Panel/index.md
+        - Overview: Projects/LEDLightPanels/20V_Panel/overview.md
     - Lorentz Solver:
-      - Projects/LorentzSolver/index.md
+      - Overview: Projects/LorentzSolver/overview.md
+      - Installation and Setup: Projects/LorentzSolver/setup.md
+      - Simulation Configuration: Projects/LorentzSolver/config.md
+      - Physics and Math: Projects/LorentzSolver/physics.md
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -68,8 +76,14 @@ copyright: © 2025 Ihsan Salari
 markdown_extensions:
   - toc:
       permalink: true
+      toc_depth: 6
   - pymdownx.arithmatex:
       generic: true
+  - admonition:
+  - pymdownx.superfences:
+  - pymdownx.highlight:
+      linenums: true
+
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

@@ -117,7 +117,33 @@
   --md-shadow-z3:
     0 0.25rem 0.625rem rgba(0, 0, 0, 0.2),
     0 0 0.0625rem rgba(0, 0, 0, 0.35);
+
 }
+
+[data-md-color-scheme="custom-dark"] .md-typeset h1 {
+  color: #c3e88d; /* greenish */
+}
+
+[data-md-color-scheme="custom-dark"] .md-typeset h2 {
+  color: #82aaff; /* blue */
+}
+
+[data-md-color-scheme="custom-dark"] .md-typeset h3 {
+  color: #f78c6c; /* orange */
+}
+
+[data-md-color-scheme="custom-dark"] .md-typeset h4 {
+  color: #c792ea; /* purple */
+}
+
+[data-md-color-scheme="custom-dark"] .md-typeset h5 {
+  color: #ffcb6b; /* yellow */
+}
+
+[data-md-color-scheme="custom-dark"] .md-typeset h6 {
+  color: #89ddff; /* cyan */
+}
+
 
 
 [data-md-color-scheme="custom-light"] {
@@ -213,4 +239,28 @@
   box-shadow:
     0 0.25rem 0.625rem rgba(0, 0, 0, 0.05),
     0 0 0.0625rem rgba(0, 0, 0, 0.1);
+}
+
+[data-md-color-scheme="custom-light"] .md-typeset h1 {
+  color: #749443f3; /* greenish */
+}
+
+[data-md-color-scheme="custom-light"] .md-typeset h2 {
+  color: #395592; /* blue */
+}
+
+[data-md-color-scheme="custom-light"] .md-typeset h3 {
+  color: #8f4832; /* orange */
+}
+
+[data-md-color-scheme="custom-light"] .md-typeset h4 {
+  color: #774499; /* purple */
+}
+
+[data-md-color-scheme="custom-light"] .md-typeset h5 {
+  color: #9f7c3a; /* yellow */
+}
+
+[data-md-color-scheme="custom-light"] .md-typeset h6 {
+  color: #296b86; /* cyan */
 }

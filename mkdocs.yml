@@ -37,8 +37,7 @@ theme:
 
 
 nav: 
-  - Home: 
-    - Overview: index.md
+  - Home: index.md
   - Projects: 
     - Projects Home: Projects/index.md
     - Business Card:

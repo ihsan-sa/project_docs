@@ -1,9 +1,11 @@
 site_name: Ihsan Salari - Project Docs
-
+site_url: https://www.docs.ihsan.cc
 theme:
   name: material
+  font: 
+    text: Courier Prime
   features:
-    # - navigation.instant
+    - navigation.instant
     - navigation.tabs
     # - navigation.sections
     - toc.integrate
@@ -17,31 +19,38 @@ theme:
     - navigation.indexes
     - navigation.tabs.sticky
     - navigation.tracking
+    - header.autohide
 
   language: en
   palette:
-    - scheme: default
+    - scheme: custom-dark
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
-      primary: orange
-      accent: purple
-    - scheme: slate
+    - scheme: custom-light
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode 
-      primary: purple
-      accent: lime
+
 
 nav: 
   - Home: index.md
   - Projects: 
     - Projects Home: Projects/index.md
-    - Business Card: 
-      - Projects/BusinessCard/index.md
-      - Hardware design: Projects/BusinessCard/hardwareDesign.md
-      - Firmware design: Projects/BusinessCard/firmware.md
-
+    - Business Card:
+      - Revision 1: 
+        - Projects/BusinessCard/Rev1/index.md
+        - Hardware design: Projects/BusinessCard/Rev1/hardwareDesign.md
+        - Firmware design: Projects/BusinessCard/Rev1/firmware.md
+    - DC to DC: Projects/DC_DC/index.md
+    - Ionic (EHD) Thruster:
+      - Projects/IonicThruster/index.md
+    - LED Flood Light Panels:
+      - Projects/LEDLightPanels/index.md
+      - 20V Panel:
+        - Projects/LEDLightPanels/20V_Panel/index.md
+    - Lorentz Solver:
+      - Projects/LorentzSolver/index.md
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -50,10 +59,17 @@ extra:
       link: https://www.linkedin.com/in/ihsan-sa
     - icon: fontawesome/solid/envelope
       link: mailto:hi@ihsan.cc
+  
+  generator: false
+
 
 copyright: © 2025 Ihsan Salari
 
 markdown_extensions:
   - toc:
       permalink: true
+      # toc_depth: 2
 
+
+extra_css:
+  - css/extra.css

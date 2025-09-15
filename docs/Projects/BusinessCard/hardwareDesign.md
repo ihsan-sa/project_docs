@@ -1,1 +1,0 @@
-# This details HW
